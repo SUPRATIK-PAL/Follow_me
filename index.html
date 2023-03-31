@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow me page</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./assets/rengoku_profile_pic.jpg" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Supratik Pal</h2>
+      </div>
+      <div class="designation">
+        <h3>Developer & Artist</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>Follow Me</div>
+        </button>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Follow My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+
+    <div>
+
+      <h3>please go ahead</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://www.facebook.com/supratik.pal.568/" class="icon" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/beginner_skill22/" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/supratik-pal-b59063238/" class="icon" id="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
